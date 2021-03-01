@@ -8,4 +8,4 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 ### Reflections:
 
-[Reflection 1: Is "open-source" the same as "free"?](https://majacannavo.github.io/geog323/reflections/reflection1)
+[Reflection 1: What is Open GIScience?](https://majacannavo.github.io/geog323/reflections/reflection1)
