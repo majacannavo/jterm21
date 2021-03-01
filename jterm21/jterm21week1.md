@@ -11,6 +11,6 @@ Once I finished building my plugin, I spent some time going through the associat
 
 One thing that still puzzled me was how to get my plugin loaded into the QGIS Processing Toolbox. I examined the code for [QNEAT3](https://root676.github.io/), a QGIS plugin by Clemens Raffler with a variety of network analysis algorithms for the Processing Toolbox, to see how it worked. (If I thought my Save Attributes plugin was complicated, this one was on an entirely new level.) Upon examination of the various .py files, I realized that this plugin includes its own processing provider—in this case, `Qneat3Provider`, which is a child class of `QgsProcessingProvider`. `Qneat3Provider` has a method to load all of the QNEAT3 algorithms, which upon installation reside in the Processing Toolbox. My plugin will follow the same general format, although it won’t be nearly as complex as QNEAT3.    
 
-[Week 2: Getting `Group By` Up and Running](https://majacannavo.github.io/jterm21week2)
+[Week 2: Getting `Group By` Up and Running](https://majacannavo.github.io/jterm21/jterm21week2)
 
-[MiMiGIS Blog Homepage](https://majacannavo.github.io/jterm21main)
+[MiMiGIS Blog Homepage](https://majacannavo.github.io/jterm21/jterm21main)

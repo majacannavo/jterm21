@@ -16,8 +16,8 @@ My task for J-Term was to package these tools into a QGIS plugin that anyone can
 
 Although I had [experience writing Python algorithms for QGIS](https://github.com/majacannavo), I had never built a plugin before, and I had a lot to learn. Follow my journey through the weekly blog posts linked below, and take a look at the repository linked at the top of this page!
 
-[Week 1: Getting Started](https://majacannavo.github.io/jterm21week1)
+[Week 1: Getting Started](https://majacannavo.github.io/jterm21/jterm21week1)
 
-[Week 2: Getting `Group By` Up and Running](https://majacannavo.github.io/jterm21week2)
+[Week 2: Getting `Group By` Up and Running](https://majacannavo.github.io/jterm21/jterm21week2)
 
-[Week 3: Finishing the Plugin](https://majacannavo.github.io/jterm21week3)
+[Week 3: Finishing the Plugin](https://majacannavo.github.io/jterm21/jterm21week3)

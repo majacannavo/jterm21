@@ -1,6 +1,6 @@
 ## J-Term 2021, Week 3: Finishing the Plugin
 
-This week I attacked the last two elements of my plugin: the Direction and Distance tool and installation of the [Maki](https://labs.mapbox.com/maki-icons/) and [National Park Service (NPS)](https://www.nps.gov/carto/app/#!/maps/symbols) icon sets. My first step was to convert the Direction and Distance model to a Python script. I thought this one was going to be pretty easy since the model is mostly just a bunch of Processing tools strung together—I figured I’d just need to get the script spruced up and easy to understand. There’s an `Execute SQL` step in this model as well, but the query formula is much simpler than in `Group By`, so it was pretty easy to get it working. 
+This week I attacked the last two elements of my plugin: the Direction and Distance tool and installation of the [Maki](https://labs.mapbox.com/maki-icons/) and [National Park Service (NPS)](https://www.nps.gov/carto/app/#!/maps/symbols) icon sets. My first step was to convert the Direction and Distance model to a Python script. I thought this one was going to be pretty easy since the model is mostly just a bunch of Processing tools strung together—I figured I’d just need to get the script spruced up and easy to understand. There’s an `Execute SQL` step in this model as well, but the query formula is much simpler than in `Group By`, so it was pretty easy to get it working.
 
 Of course I should’ve known that there’s no free lunch in programming or GIS land. I hit a snag at the step where `Field Calculator` is used to calculate direction via the `azimuth()` function. The model uses a formula that refers to the x- and y- coordinates of a point layer generated earlier in the model, but when you’re running `Field Calculator` from a Python script on any given layer, you don’t have access to other layers. All I needed to do was find the x- and y-coordinates of the point and plug them into a string that I could then pass into the `Field Calculator`. Although this task seemed incredibly simple, I couldn’t think of a straightforward way to do it.
 
@@ -14,4 +14,4 @@ Inside `__init__.py`, which initializes the plugin, I wrote some code, adapted f
 
 Visit the MiMiGIS GitHub repository [here](https://github.com/GIS4DEV/MiMiGIS)!
 
-[MiMiGIS Blog Homepage](https://majacannavo.github.io/jterm21main)
+[MiMiGIS Blog Homepage](https://majacannavo.github.io/jterm21/jterm21main)
