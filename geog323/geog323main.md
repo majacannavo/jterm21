@@ -4,7 +4,7 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 ### Portfolio:
 
-[Gravity Model of Spatial Interaction](portfolio/gravity.md)
+[Gravity Model of Spatial Interaction](portfolio/gravity/gravity.md)
 
 ### Reflections:
 
