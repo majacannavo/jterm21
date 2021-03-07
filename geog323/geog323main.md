@@ -4,8 +4,8 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 ### Portfolio:
 
-[Gravity Model of Spatial Interaction](https://majacannavo.github.io/geog323/portfolio/gravity)
+[Gravity Model of Spatial Interaction](portfolio/gravity/gravity.md)
 
 ### Reflections:
 
-[Reflection 1: What is Open GIScience?](https://majacannavo.github.io/geog323/reflections/reflection1)
+[Reflection 1: What is Open GIScience?](reflections/reflection1.md)
