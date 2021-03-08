@@ -2,7 +2,7 @@
 
 This week we created a QGIS model to execute a workflow for the [gravity model of spatial interaction](https://gis4dev.github.io/lessons/02a_gravitymodel.html), which predicts the amount of interaction between two places based on their attractiveness and distance apart, using the following formula:
 
-potential interaction = (inputWeight)^λ * (targetWeight)^α / (distance)^β.
+Potential Interaction = (inputWeight)^λ * (targetWeight)^α / (distance)^β.
 
 We tailored our model specifically for the purposes of creating hospital catchment areas, which encompass the towns we expect hospitals to serve based on the population of each town and the number of beds in each hospital.
 
