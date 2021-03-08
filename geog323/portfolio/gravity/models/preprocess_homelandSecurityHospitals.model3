@@ -109,7 +109,7 @@
     <Option value="Relevant hospitals for creating catchment areas (general acute care,  women's,  or children's hospitals that are open and that have data on the number of beds)." type="QString" name="native:extractbyexpression_1:Relevant Hospitals"/>
   </Option>
   <Option name="modelVariables"/>
-  <Option value="Middlybur" type="QString" name="model_group"/>
+  <Option value="Middlebury" type="QString" name="model_group"/>
   <Option value="Preprocess Homeland Security Hospital Data" type="QString" name="model_name"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="HomelandSecurityHospitals">

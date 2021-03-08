@@ -14,9 +14,9 @@ Here are images of the models, as they appear in the QGIS Model Designer:
 ![Gravity Model of Spatial Interaction QGIS Model](assets/images/gravityModel.png)
 
 [Preprocess Homeland Security Hospital Data](models/preprocess_homelandSecurityHospitals.model3)
-![Preprocess Homeland Security Hospital Data QGIS Model](assets/images/preprocessModel.png)
+![Preprocess Homeland Security Hospital Data QGIS Model](assets/images/preprocessModel2.png)
 
-[Group Hospitals By Geographic Location](models/groupHosps_byGeographicLocation)
+[Group Hospitals By Geographic Location](models/groupHosps_byGeographicLocation.model3)
 ![Group Hospitals By Geographic Location QGIS Model](assets/images/hospitalClustersModel.png)
 
 I put my gravity model to use by calculating hospital catchment areas for the Northeast U.S., using towns/cities as the input (origin) layer and hospital clusters by zip code (which I prepared using my preprocessing and hospital grouping models) as the target (destination) layer. I then made a map comparing the catchment areas I computed with the [Dartmouth Atlas of Health Care hospital service areas](https://atlasdata.dartmouth.edu/downloads/supplemental#boundaries) (HSAs). Check out the web map [here](assets/index.html)!

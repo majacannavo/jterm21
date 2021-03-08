@@ -184,7 +184,7 @@
     <Option value="Geographic location field,  for example city/town or zip code.  If you are looking at an area spanning multiple states and grouping by city/town,  be careful of repeated city/town names--you may want to create a field with both city and state to prevent confusion." type="QString" name="zipcodefield"/>
   </Option>
   <Option name="modelVariables"/>
-  <Option value="" type="QString" name="model_group"/>
+  <Option value="Middlebury" type="QString" name="model_group"/>
   <Option value="Group Hospitals by Geographic Location" type="QString" name="model_name"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="HospitalsLayer">
