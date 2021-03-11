@@ -1,6 +1,6 @@
 # Gravity Model of Spatial Interaction
 
-[reflection2](..reflections/reflection2.md)
+[reflection2](./reflections/reflection2.md)
 
 This week we created a QGIS model to execute a workflow for the [gravity model of spatial interaction](https://gis4dev.github.io/lessons/02a_gravitymodel.html), which predicts the amount of interaction between two places based on their attractiveness and distance apart, using the following formula:
 
