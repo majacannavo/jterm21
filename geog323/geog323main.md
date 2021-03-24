@@ -6,6 +6,8 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 [Gravity Model of Spatial Interaction](portfolio/gravity/gravity.md)
 
+[Rosgen Classification in GRASS/R](portfolio/rosgen/re-rosgen.md)
+
 ### Reflections:
 
 [Reflection 1: What is Open GIScience?](reflections/reflection1.md)
