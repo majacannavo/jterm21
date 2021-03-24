@@ -60,7 +60,7 @@ Figure 6.
 Figure 7.
 
 ![Figure 8.](assets/crossprofile_withline_graph.png)
-Figure 8.
+Figure 8. <br />
 
 ![Figure 9.](assets/determining_floodpronewidth_graph.png)
 Figure 9.
