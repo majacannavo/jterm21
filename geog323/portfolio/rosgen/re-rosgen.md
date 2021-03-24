@@ -89,6 +89,8 @@ Table 2. Rosgen Level I Classification
 | Sinuosity | 1.17 |
 | Level I Stream Type | C |
 
+<br /><br /><br /><br />
+
 Table 3. Rosgen Level II Classification
 
 | Criterion | Value |
@@ -96,6 +98,8 @@ Table 3. Rosgen Level II Classification
 | Slope (ratio) | 0.00467 |
 | Channel Material | Gravel |
 | Level II Stream Type | C4 |
+
+<br /><br /><br /><br />
 
 
 ## Conclusion
