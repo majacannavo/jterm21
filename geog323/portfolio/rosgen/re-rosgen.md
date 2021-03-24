@@ -69,13 +69,13 @@ Table 1. Site Measurements
 
 | Variable | Value | Source |
 | :-: | :-: | :-: |
-| Mean Bankfull Width | 17.17 | CHaMP |
-| Mean Bankfull Depth | 0.4466 | CHaMP |
-| Max Bankfull Depth | 1.098 | CHaMP |
+| Mean Bankfull Width (m) | 17.17 | CHaMP |
+| Mean Bankfull Depth (m) | 0.4466 | CHaMP |
+| Max Bankfull Depth (m) | 1.098 | CHaMP |
 | Valley Width (m) | 94 | Cross-sectional profile in R |
-| Valley Depth | 2.197 | 2 x max bankfull depth |
-| Stream/River Length | 406.3 | GRASS centerline attribute table |
-| Valley Length | 347.8 | GRASS centerline attribute table |
+| Valley Depth (m) | 2.197 | 2 x max bankfull depth |
+| Stream/River Length (m) | 406.3 | GRASS centerline attribute table |
+| Valley Length (m) | 347.8 | GRASS centerline attribute table |
 | Median Channel Material Particle Diameter (mm) | 61 | CHaMP |
 
 <br /><br />
