@@ -54,16 +54,16 @@ Figure 4.
 Figure 5.
 
 ![Figure 6.](assets/longprof_slope_graph.png)
-Figure 6.
+Figure 6. <br /><br />
 
 ![Figure 7.](assets/longprof_slopebydist_graph.png)
-Figure 7.
+Figure 7. <br /><br />
 
 ![Figure 8.](assets/crossprofile_withline_graph.png)
-Figure 8. <br />
+Figure 8. <br /><br />
 
 ![Figure 9.](assets/determining_floodpronewidth_graph.png)
-Figure 9.
+Figure 9. <br /><br />
 
 Table 1. Site Measurements
 
