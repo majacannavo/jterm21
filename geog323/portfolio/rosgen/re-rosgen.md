@@ -2,7 +2,7 @@
 layout: page
 title: RE- Replication of Rosgen Stream Classification
 ---
-# RE- Replication of Rosgen Stream Classification
+# Rosgen Classification in GRASS/R
 
 **Replication of**
 ## A classification of natural rivers
