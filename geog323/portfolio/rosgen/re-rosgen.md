@@ -2,10 +2,10 @@
 layout: page
 title: RE- Replication of Rosgen Stream Classification
 ---
-
+# RE- Replication of Rosgen Stream Classification
 
 **Replication of**
-# A classification of natural rivers
+## A classification of natural rivers
 
 Original study *by* Rosgen, D. L.
 *in* *CATENA* 22 (3):169–199. https://linkinghub.elsevier.com/retrieve/pii/0341816294900019.
