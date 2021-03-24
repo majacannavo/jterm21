@@ -99,7 +99,7 @@ Table 3. Rosgen Level II Classification
 | Channel Material | Gravel |
 | Level II Stream Type | C4 |
 
-<br /><br />
+<br />
 
 
 ## Conclusion
