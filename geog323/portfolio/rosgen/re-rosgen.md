@@ -63,7 +63,7 @@ Figure 7. <br /><br />
 Figure 8. <br /><br />
 
 ![Figure 9.](assets/determining_floodpronewidth_graph.png)
-Figure 9. <br /><br />
+Figure 9. <br /><br /><br /><br />
 
 Table 1. Site Measurements
 
