@@ -60,7 +60,7 @@ Figure 6. <br /><br /><br /><br />
 Figure 7. <br /><br /><br /><br />
 
 ![Figure 8.](assets/crossprofile_withline_graph.png)
-Figure 8. <br /><br /><br /><br />
+Figure 8. The black horizontal line, which also appears in Figure 9, represents the width of the valley's flood-prone area. We place the line at a height of twice the maximum bankfull depth.  <br /><br /><br /><br />
 
 ![Figure 9.](assets/determining_floodpronewidth_graph.png)
 Figure 9. <br /><br /><br /><br />
