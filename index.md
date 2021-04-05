@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: maja learns to build stuff | home
 ---
 ## My name is Maja Cannavo, and I'm a senior geography major and computer science minor at Middlebury College.
 I'm working on projects that bridge my interests in GIS and programming. Check out the links below for details, or check out my GitHub profile [here](https://github.com/majacannavo)!
