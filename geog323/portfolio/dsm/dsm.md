@@ -28,9 +28,7 @@ We completed the following analysis using SQL queries within a PostGIS database 
 1. Select relevant waterway features (drains, ditches, streams, rivers, and canals) from planet_osm_line layer
 
 `create table waterway_lines as
-
 select osm_id, waterway, way from planet_osm_line
-
 where waterway = 'drain' or waterway = 'ditch' or waterway = 'stream' or waterway = 'river' or waterway = 'canal';`
 
 2. Transform geometry field of our waterway_lines table to EPSG:32737
