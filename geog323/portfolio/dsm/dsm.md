@@ -8,7 +8,7 @@
 
 In this analysis we identified waste collection sites within 50 meters of water transmission features as potentially dangerous waste sites and calculated the density of dangerous waste sites for each ward in Dar es Salaam to identify spatial distribution of environmental vulnerability.
 
-<br /><br />
+<br />
 
 ## Data Sources
 
@@ -19,7 +19,7 @@ In this analysis we identified waste collection sites within 50 meters of water 
 - [wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards): administrative wards in Dar es Salaam
 - [wastesites](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_trash_data): sites of "poorly managed solid waste" in Dar es Salaam
 
-<br /><br />
+<br />
 
 ## Methods
 
@@ -99,7 +99,7 @@ where countwastesites is null;`
 `alter table wards_with_count add column danger_ws_density real;
 update wards_with_count set danger_ws_density = countwastesites / area_km2;`
 
-<br /><br />
+<br />
 
 ## Results
 
@@ -117,7 +117,7 @@ Figure 1. <br /><br /><br /><br />
 Figure 2. <br /><br /><br /><br />
 
 ![Figure 3.](assets/pop_density.png)
-Figure 3. <br /><br /><br /><br />
+Figure 3. <br /><br />
 
 ## References
 Schuurman, N. 2008. Database Ethnographies Using Social Science Methodologies to Enhance Data Analysis and Interpretation. Geography Compass 2 (5):1529–1548. 10.1111/j.1749-8198.2008.00150.x
