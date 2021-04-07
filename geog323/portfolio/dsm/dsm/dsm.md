@@ -8,6 +8,8 @@
 
 In this analysis we identify waste collection sites within 50 meters of water transmission features as potentially dangerous waste sites and calculate the density of dangerous waste sites for each ward in Dar es Salaam to identify spatial distribution of environmental vulnerability.
 
+<br /><br />
+
 ## Data Sources
 
 [OpenStreetMap](https://www.openstreetmap.org/) is a public database editable by anyone with access to the internet. For much of the data in Dar es Salaam, local university students are among the main contributors.
@@ -16,6 +18,8 @@ In this analysis we identify waste collection sites within 50 meters of water tr
 [Resilience Academy](https://resilienceacademy.ac.tz/) is a Dar es Salaam-based program aimed to equip students with the GIS tools necessary to analyze local challenges and urban resilience (e.g. flood risk).
 - [wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_ward): administrative wards in Dar es Salaam
 - [wastesites](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_trash_data): sites of "poorly managed solid waste" in Dar es Salaam
+
+<br /><br />
 
 ## Methods
 
@@ -94,6 +98,8 @@ where countwastesites is null;`
 
 `alter table wards_with_count add column danger_ws_density real;
 update wards_with_count set danger_ws_density = countwastesites / area_km2;`
+
+<br /><br />
 
 ## Results
 
