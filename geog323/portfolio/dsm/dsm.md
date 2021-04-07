@@ -53,7 +53,7 @@ from buffers_50m;`
 `create table singlepart_buffers as
 select (st_dump(geom)).geom::geometry(polygon,32737) from buffers_50m_dissolve;`
 
-6. Import wastesites with EPSG:32737
+6. Import wastesites using EPSG:32737
 
 7. Select all waste sites that intersect the buffers
 
