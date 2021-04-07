@@ -8,7 +8,7 @@
 
 In this analysis we identified waste collection sites within 50 meters of water transmission features as potentially dangerous waste sites and calculated the density of dangerous waste sites for each ward in Dar es Salaam to identify spatial distribution of environmental vulnerability.
 
-<br />
+<br /><br />
 
 ## Data Sources
 
@@ -19,7 +19,7 @@ In this analysis we identified waste collection sites within 50 meters of water 
 - [wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards): administrative wards in Dar es Salaam
 - [wastesites](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_trash_data): sites of "poorly managed solid waste" in Dar es Salaam
 
-<br />
+<br /><br />
 
 ## Methods
 
@@ -99,7 +99,7 @@ where countwastesites is null;`
 `alter table wards_with_count add column danger_ws_density real;
 update wards_with_count set danger_ws_density = countwastesites / area_km2;`
 
-<br />
+<br /><br />
 
 ## Results
 
@@ -110,14 +110,14 @@ According to our analysis, the highest density of waste sites near water transmi
 However, the waste site density choropleth map obscures the full story. As Schuurman ([2008](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x)) argues, the ethnography of spatial data, or the "social practices" (p. 1529) and particular context through which such data are gathered and compiled, is an essential attribute that researchers far too often fail to consider. In this particular situation, although our results are relatively unsurprising since both population and water transmission features seem to be concentrated in the central wards of Dar es Salaam (Figures 1 and 2), there are also clear gaps in data collection. Documented waste sites are entirely absent from the southwestern and southeastern wards of the city (Figure 3). This could be due to a difference in waste disposal practices between those areas and the central-to-northern wards, but another likely
 possibility is that waste site locations were recorded only in part of the city. It is difficult to analyze distribution of environmental risk and vulnerability across the entirety of Dar es Salaam if we are missing data for a wide swath of the city. This problem underscores both the benefits and drawbacks of community mapping efforts. Community mapping has the capacity to pool the knowledge and experience of large and diverse groups of people, but the data may be collected and recorded less systematically and comprehensively than in other types of mapping efforts. In order to best interpret any kind of spatial data it is crucial to know the story behind the rows and columns, and this is particularly important in the case of community- or crowd-sourced data.
 
-![Figure 1.](assets/wastesite_density.jpg)
+![Figure 1.](assets/wastesite_density.png)
 Figure 1. <br /><br /><br /><br />
 
-![Figure 2.](assets/wastesite_locations.jpg)
+![Figure 2.](assets/wastesite_locations.png)
 Figure 2. <br /><br /><br /><br />
 
-![Figure 3.](assets/pop_density.jpg)
-Figure 3. <br /><br />
+![Figure 3.](assets/pop_density.png)
+Figure 3. <br /><br /><br /><br />
 
 ## References
 Schuurman, N. 2008. Database Ethnographies Using Social Science Methodologies to Enhance Data Analysis and Interpretation. Geography Compass 2 (5):1529–1548. 10.1111/j.1749-8198.2008.00150.x
