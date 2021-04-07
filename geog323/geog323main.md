@@ -8,6 +8,8 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 [Rosgen Classification in GRASS/R](portfolio/rosgen/re-rosgen.md)
 
+[Spatial Urban Resilience Analysis of Dar es Salaam](portfolio/dsm/dsm.md)
+
 ### Reflections:
 
 [Reflection 1: What is Open GIScience?](reflections/reflection1.md)
