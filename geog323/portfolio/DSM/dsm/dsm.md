@@ -94,3 +94,5 @@ where countwastesites is null;`
 
 `alter table wards_with_count add column danger_ws_density real;
 update wards_with_count set danger_ws_density = countwastesites / area_km2;`
+
+### Results
