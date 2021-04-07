@@ -16,7 +16,7 @@ In this analysis we identified waste collection sites within 50 meters of water 
 - planet_osm_line: a table of line features in Dar es Salaam compiled by [Joseph Holler](https://www.josephholler.com/) from OSM into a database table using [OSM2PGSQL](https://osm2pgsql.org/)
 
 [Resilience Academy](https://resilienceacademy.ac.tz/) is a Dar es Salaam-based program aimed to equip students with the GIS tools necessary to analyze local challenges and urban resilience (e.g. flood risk).
-- [wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_ward): administrative wards in Dar es Salaam
+- [wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_wards): administrative wards in Dar es Salaam
 - [wastesites](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_trash_data): sites of "poorly managed solid waste" in Dar es Salaam
 
 <br /><br />
@@ -27,9 +27,9 @@ We completed the following analysis using SQL queries within a PostGIS database 
 
 1. Select relevant waterway features (drains, ditches, streams, rivers, and canals) from planet_osm_line layer
 
-`create table waterway_lines as
-select osm_id, waterway, way from planet_osm_line
-where waterway = 'drain' or waterway = 'ditch' or waterway = 'stream' or waterway = 'river' or waterway = 'canal';`
+  create table waterway_lines as
+  select osm_id, waterway, way from planet_osm_line
+  where waterway = 'drain' or waterway = 'ditch' or waterway = 'stream' or waterway = 'river' or waterway = 'canal';
 
 2. Transform geometry field of our waterway_lines table to EPSG:32737
 
