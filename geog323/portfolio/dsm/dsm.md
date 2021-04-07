@@ -69,7 +69,7 @@ select wastesites_in_zones.*, wards.ward_name
 from wastesites_in_zones inner join wards
 on st_intersects(wastesites_in_zones.geom, wards.utmgeom);`
 
-9. Group waste sites by ward
+9. Group and count waste sites by ward
 
 `create table countedwastesites_byward as
 select count(id) as countwastesites, ward_name
