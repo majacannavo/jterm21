@@ -6,7 +6,7 @@
 
 [Madeleine Tango](https://mtango99.github.io/) and I chose to investigate the following question: "How does environmental risk and vulnerability due to placement of waste sites near water transmission features vary spatially across Dar es Salaam?" This is an important issue because placement of solid waste sites near water transmission features such as rivers, streams, canals, drains and ditches can lead to flooding during rain events if these waste collections block water transmission and egress. Not only can this result in flooding, but it can also lead to increased contact between humans and pathogens, toxins, and other environmental hazards.
 
-In this analysis we identify waste collection sites within 50 meters of water transmission features as potentially dangerous waste sites and calculate the density of dangerous waste sites for each ward in Dar es Salaam to identify spatial distribution of environmental vulnerability.
+In this analysis we identified waste collection sites within 50 meters of water transmission features as potentially dangerous waste sites and calculated the density of dangerous waste sites for each ward in Dar es Salaam to identify spatial distribution of environmental vulnerability.
 
 <br /><br />
 
