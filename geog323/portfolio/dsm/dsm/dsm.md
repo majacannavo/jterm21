@@ -13,7 +13,7 @@ In this analysis we identified waste collection sites within 50 meters of water 
 ## Data Sources
 
 [OpenStreetMap](https://www.openstreetmap.org/) is a public database editable by anyone with access to the internet. For much of the data in Dar es Salaam, local university students are among the main contributors.
-- planet_osm_line: a table of line features in Dar es Salaam compiled by [Joseph Holler](https://www.josephholler.com/) from OSM into a database table using [OSM2PGSQL]((https://osm2pgsql.org/)
+- planet_osm_line: a table of line features in Dar es Salaam compiled by [Joseph Holler](https://www.josephholler.com/) from OSM into a database table using [OSM2PGSQL](https://osm2pgsql.org/)
 
 [Resilience Academy](https://resilienceacademy.ac.tz/) is a Dar es Salaam-based program aimed to equip students with the GIS tools necessary to analyze local challenges and urban resilience (e.g. flood risk).
 - [wards](https://geonode.resilienceacademy.ac.tz/layers/geonode_data:geonode:dar_es_salaam_administrative_ward): administrative wards in Dar es Salaam
