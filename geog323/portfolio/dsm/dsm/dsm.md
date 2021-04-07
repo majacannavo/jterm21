@@ -23,9 +23,9 @@ We completed the following analysis using SQL queries within a PostGIS database 
 
 1. Select relevant waterway features (drains, ditches, streams, rivers, and canals) from planet_osm_line layer
 
-`create table waterway_lines as
-select osm_id, waterway, way from planet_osm_line
-where waterway = 'drain' or waterway = 'ditch' or waterway = 'stream' or waterway = 'river' or waterway = 'canal';`
+    `create table waterway_lines as
+    select osm_id, waterway, way from planet_osm_line
+    where waterway = 'drain' or waterway = 'ditch' or waterway = 'stream' or waterway = 'river' or waterway = 'canal';`
 
 2. Transform geometry field of our waterway_lines table to EPSG:32737
 
@@ -97,4 +97,4 @@ update wards_with_count set danger_ws_density = countwastesites / area_km2;`
 
 ### Results
 
-According to our analysis, the highest density of waste sites near water transmission features occurs in the center of Dar es Salaam (Figure 1). It is unsurprising that waste sites are so clustered here due to the high population density of the area (Figure 2), but the high prevalence of water transmission features greatly increases the level of environmental hazard posed by the waste sites (Figure 1). 
+According to our analysis, the highest density of waste sites near water transmission features occurs in the center of Dar es Salaam (Figure 1). It is unsurprising that waste sites are so clustered here due to the high population density of the area (Figure 2), but the high prevalence of water transmission features greatly increases the level of environmental hazard posed by the waste sites (Figure 1). How
