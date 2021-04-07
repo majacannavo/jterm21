@@ -122,4 +122,4 @@ Figure 2. <br /><br /><br /><br />
 Figure 3. <br /><br />
 
 ## References
-Schuurman, N. 2008. Database Ethnographies Using Social Science Methodologies to Enhance Data Analysis and Interpretation. Geography Compass 2 (5):1529–1548. [10.1111/j.1749-8198.2008.00150.x](10.1111/j.1749-8198.2008.00150.x)
+Schuurman, N. 2008. Database Ethnographies Using Social Science Methodologies to Enhance Data Analysis and Interpretation. Geography Compass 2 (5):1529–1548. [https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1749-8198.2008.00150.x)
