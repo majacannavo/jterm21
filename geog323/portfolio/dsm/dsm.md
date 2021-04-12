@@ -29,77 +29,107 @@ We completed the following analysis using SQL queries within a PostGIS database 
 
 ```sql
 create table waterway_lines as
-select osm_id, waterway, way from planet_osm_line
+select osm_id, waterway, way
+from planet_osm_line
 where waterway = 'drain' or waterway = 'ditch' or waterway = 'stream' or waterway = 'river' or waterway = 'canal';
 ```
 
 2. Transform geometry field of our waterway_lines table to EPSG:32737
 
-`create table waterway_lines_geom as
+```sql
+create table waterway_lines_geom as
 select osm_id, waterway, st_transform(way,32737)::geometry(linestring,32737) as geom
-from waterway_lines;`
+from waterway_lines;
+```
 
 3. Create 50m buffers around the water features--this will be the area where we look for dangerous waste sites
 
-`create table buffers_50m as
-select osm_id, waterway, st_multi(st_buffer(geom, 50))::geometry(multipolygon,32737) as geom from waterway_lines_geom;`
+```sql
+create table buffers_50m as
+select osm_id, waterway, st_multi(st_buffer(geom, 50))::geometry(multipolygon,32737) as geom
+from waterway_lines_geom;
+```
 
 4. Dissolve the buffers
 
-`create table buffers_50m_dissolve as
+
+```sql
+create table buffers_50m_dissolve as
 select st_union(geom)::geometry(multipolygon,32737) as geom
-from buffers_50m;`
+from buffers_50m;
+```
 
 5. Convert dissolved buffers to singlepart geometries
 
-`create table singlepart_buffers as
-select (st_dump(geom)).geom::geometry(polygon,32737) from buffers_50m_dissolve;`
+```sql
+create table singlepart_buffers as
+select (st_dump(geom)).geom::geometry(polygon,32737)
+from buffers_50m_dissolve;
+```
 
 6. Import wastesites using EPSG:32737
 
 7. Select all waste sites that intersect the buffers
 
-`create table wastesites_in_zones as
+```sql
+create table wastesites_in_zones as
 select wastesites.*
 from wastesites inner join singlepart_buffers
-on st_intersects(wastesites.geom, singlepart_buffers.geom);`
+on st_intersects(wastesites.geom, singlepart_buffers.geom);
+```
 
 8. Join ward names to waste sites based on location
 
-`create table wastesites_with_wardnames as
+```sql
+create table wastesites_with_wardnames as
 select wastesites_in_zones.*, wards.ward_name
 from wastesites_in_zones inner join wards
-on st_intersects(wastesites_in_zones.geom, wards.utmgeom);`
+on st_intersects(wastesites_in_zones.geom, wards.utmgeom);
+```
 
 9. Group and count waste sites by ward
 
-`create table countedwastesites_byward as
+```sql
+create table countedwastesites_byward as
 select count(id) as countwastesites, ward_name
-from wastesites_with_wardnames group by ward_name;`
+from wastesites_with_wardnames
+group by ward_name;
+```
 
 10. Add area field (in km^2) to wards table
 
-`alter table wards add column area_km2 real;
-update wards set area_km2 = st_area(utmgeom)/1000000;`
+```sql
+alter table wards
+add column area_km2 real;
+update wards set area_km2 = st_area(utmgeom)/1000000;
+```
 
 11. Join count of waste sites back to wards table
 
-`create table wards_with_count as
+```sql
+create table wards_with_count as
 select wards.*, countedwastesites_byward.countwastesites
 from wards left join countedwastesites_byward
-on wards.ward_name = countedwastesites_byward.ward_name;`
+on wards.ward_name = countedwastesites_byward.ward_name;
+```
 
 12. Replace null waste site count values with 0
 
-`update wards_with_count
+```sql
+update wards_with_count
 set countwastesites = 0
-where countwastesites is null;`
+where countwastesites is null;
+```
 
 
 13. Calculate dangerous waste site density
 
-`alter table wards_with_count add column danger_ws_density real;
-update wards_with_count set danger_ws_density = countwastesites / area_km2;`
+```sql
+alter table wards_with_count
+add column danger_ws_density real;
+update wards_with_count
+set danger_ws_density = countwastesites / area_km2;
+```
 
 <br />
 
