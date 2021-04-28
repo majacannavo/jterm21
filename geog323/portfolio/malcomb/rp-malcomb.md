@@ -12,6 +12,13 @@ Original study *by* Malcomb, D. W., E. A. Weaver, and A. R. Krakowka. 2014. Vuln
 Replication Authors:
 Maja Cannavo, Joseph Holler, Kufre Udoh, Open Source GIScience students of fall 2019 and Spring 2021
 
+**Special thanks** to my group members--we all worked together to write our workflow and data sources section:
+[Drew An-Pham](https://daptx.github.io/)
+[Emma Clinton](https://emmaclinton.github.io/)
+[Jacob Freedman](https://jafreedman12.github.io/)
+[Nick Nonnenmacher](https://nicknonnen.github.io/)
+[Alitzel Villaneuva](https://avillanueva1005.github.io/)
+
 Replication Materials Available at: [majacannavo/RP-Malcomb](https://github.com/majacannavo/RP-Malcomb)
 
 Created: `14 April 2021`
