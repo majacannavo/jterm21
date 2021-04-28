@@ -252,6 +252,8 @@ My adaptive capacity scores by traditional authority (Figure 1) display a relati
 *Figure 1. Adaptive capacity scores by traditional authority, 2010. (analogous to Malcomb et al. Fig. 4)*
 ![Figure 1](assets/ac_2010.png)
 
+<br/><br/>
+
 *Figure 2. Adaptive capacity difference between reproduction and original.*
 ![Figure 2](assets/fig4_diff_map.png)
 
@@ -259,6 +261,8 @@ My map of vulnerability to climate change across Malawi (Figure 3) displays a mu
 
 *Figure 3. Vulnerability to Climate Change in Malawi. (analogous to Malcomb et al. Fig. 5)*
 ![Figure 3](assets/vulnerability_full.png)
+
+<br/><br/>
 
 *Figure 4. Vulnerability difference between reproduction and original.*
 ![Figure 4](assets/fig5_diff_map.png)
