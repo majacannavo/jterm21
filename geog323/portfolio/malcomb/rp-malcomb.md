@@ -183,19 +183,19 @@ Process Adaptive Capacity
 1. Bring in DHS Data [Households Level] (vector)
 2. Bring in TA (Traditional Authority) boundaries and LHZ (livelihood zones) data
 3. Get rid of unsuitable households (eliminate NULL and/or missing values)
-3. Join TA and LHZ ID data to the DHS clusters
-4. Pre-process the livestock data
+4. Join TA and LHZ ID data to the DHS clusters
+5. Pre-process the livestock data
 	- Filter for NA livestock data
 	- Update livestock data (summing different kinds)
-5. FIELD CALCULATOR: Normalize each indicator variable and rescale from 1-5 (real numbers) based on percent rank
-6. FIELD CALCULATOR / ADD FIELD: Apply weights to normalized indicator variables to get scores for each category (assets, access)
-7. SUMMARIZE/AGGREGATE: find the stats of the capacity of each TA (min, max, mean, sd)
-8. Join ta_capacity to TA based on ta_id
-9. Prepare breaks for mapping
+6. FIELD CALCULATOR: Normalize each indicator variable and rescale from 1-5 (real numbers) based on percent rank
+7. FIELD CALCULATOR / ADD FIELD: Apply weights to normalized indicator variables to get scores for each category (assets, access)
+8. SUMMARIZE/AGGREGATE: find the stats of the capacity of each TA (min, max, mean, sd)
+9. Join ta_capacity to TA based on ta_id
+10. Prepare breaks for mapping
   - Class intervals based on capacity_2010 field
   - Take the values and round them to 2 decimal places
   - Put data in 4 classes based on break values
-10. Save the adaptive capacity scores
+11. Save the adaptive capacity scores
 
 Process Livelihood Sensitivity
 1. Load LHZ .csv into QGIS
