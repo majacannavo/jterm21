@@ -21,7 +21,7 @@ Maja Cannavo, Joseph Holler, Kufre Udoh, Open Source GIScience students of fall 
 
 Replication Materials Available at: [majacannavo/RP-Malcomb](https://github.com/majacannavo/RP-Malcomb)
 
-Created: `14 April 2021`
+Created: `14 April 2021` | 
 Revised: `27 April 2021`
 
 ## Abstract
