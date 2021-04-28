@@ -31,6 +31,7 @@ The original study was published without data or code, but has detailed narrativ
 ### Data Description and Variables
 
 **Assets & Access**
+
 Source: The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from https://dhsprogram.com/Data/
 Collected by trained USAID staff using GPS receivers
 GPS readings correspond to center of household cluster (one randomized point per household cluster)
@@ -88,6 +89,7 @@ Transformations: used in EA variable to classify major lakes as such in final re
 
 
 **Livelihood Zones**
+
 The Livelihood Zones data is created by aggregating general regions where similar crops are grown and similar ecological patterns exist. This data exists originally at the household level and was aggregated into Livelihood Zones. To construct the aggregation used for “Livelihood Sensitivity” in this analysis, we use these household points from the FEWSNET data that had previously been aggregated into livelihood zones. The four Livelihood Sensitivity categories are 1) Percent of food from own farm (6%); 2) Percent of income from wage labor (6%); 3) Percent of income from cash crops (4%); and 4) Disaster coping strategy (4%). In the original R script, household data from the DHS survey was used as a proxy for the specific data points in the livelihood sensitivity analysis (transformation: Join with DHS clusters to apply LHZ FNID variables). With this additional FEWSNET data at the household level, we can construct these four livelihood sensitivity categories using existing variables (Table 2).
 The LHZ data variables are outlined in **Table 2**. The four categories used to determine livelihood sensitivity were ranked from 1-5 based on percent rank values and then weighted using values taken from Malcomb et al. (2014).
 
