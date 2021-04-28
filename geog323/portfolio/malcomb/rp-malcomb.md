@@ -3,9 +3,9 @@ layout: page
 title: RP- Vulnerability modeling for sub-Saharan Africa
 ---
 
+# Climate Vulnerability in Malawi
 
-**Replication of**
-# Vulnerability modeling for sub-Saharan Africa
+## Replication of: Vulnerability modeling for sub-Saharan Africa
 
 Original study *by* Malcomb, D. W., E. A. Weaver, and A. R. Krakowka. 2014. Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. *Applied Geography* 48:17–30. DOI:[10.1016/j.apgeog.2014.01.004](https://doi.org/10.1016/j.apgeog.2014.01.004)
 
@@ -270,7 +270,9 @@ Do the research findings suggest a need for any future research?
 
 Ultimately, this analysis was partly successful in reproducing Malcomb et al.'s study of climate change vulnerability in Malawi. We found that it was much easier to reliably reproduce results for the parts of the study where indicator variables were clearly delineated and it was readily apparent how data points mapped to these variables. This reproduction also lends support to Tate's (2013) conceptualization of vulnerability index development as "a sequential process" wherein uncertainty arising at each step has an effect on each step further down the line until the final result is computed (p. 528). I was able to achieve a fairly successful replication of Malcomb et al.'s adaptive capacity results, for which the computation process is clear and well documented. When the factors of livelihood sensitivity and physical exposure are added in, however, the original authors' methodology becomes less clear, and the authors of the reproduction must decide how to interpret this methodology, potentially making decisions that diverge significantly from those of the original authors.
 
-The results of this replication suggest a need for improved documentation in geographic information science research. A more detailed description of how livelihood sensitivity variables were developed and specific formulae for how overall household resilience scores were calculated would have likely made Malcomb et al.'s work much easier to replicate. Had the authors included the actual code they used in the study, we would have been able to examine and critique their methods much more closely, and hopefully have much more success in producing results similar to theirs. 
+The results of this replication suggest a need for improved documentation in geographic information science research. A more detailed description of how livelihood sensitivity variables were developed and specific formulae for how overall household resilience scores were calculated would have likely made Malcomb et al.'s work much easier to replicate. Had the authors included the actual code and GIS workflows they used in the study, we would have been able to examine and critique their methods much more closely, and hopefully have much more success in producing results similar to theirs.
+
+In the world of open-source geographic information science, inclusion of detailed methodology and even actual code can prove particularly valuable to students or others attempting to learn from and reproduce research because anyone can obtain the necessary tools to complete the analysis. Because Malcomb et al. completed their analysis in ArcGIS and STATA, two proprietary software packages, this principle does not apply quite to the same degree, but more detailed documentation of methods and decisions would have made replicating the authors' work easier regardless of the replicator's software options.
 
 ## References
 
