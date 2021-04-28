@@ -233,18 +233,18 @@ Aggregate to create final score:
 My adaptive capacity scores by traditional authority (Figure 1) display a relatively strong positive correlation with the adaptive capacity scores calculated by Malcomb et al., with a Spearman's rho value of 0.779495. (See Figure 2 for a geographic distribution of difference between my reproduction and the original study.) The p-value is infinitesimal at less than 2.2 x 10^-16, although this means little given that we have a very large sample size. Thus, the original study is relatively well supported by the replication. It would be difficult to achieve a Spearman's rho of very close to 1 considering that we are not comparing our replication maps directly to Malcomb et al.'s but are instead comparing our replication maps to maps we created in QGIS seeking to approximate Malcomb et al.'s results as closely as possible using zonal statistics with a TA polygon layer and a georeferenced version of Malcomb et al.'s TA resilience map. No deviations were planned from the original study.
 
 *Figure 1. Adaptive capacity scores by traditional authority, 2010. (analogous to Malcomb et al. Fig. 4)*
-![assets/ac_2010.png]
+![Figure 1](assets/ac_2010.png)
 
 *Figure 2. Adaptive capacity difference between reproduction and original.*
-![assets/fig4_diff_map.png]
+![Figure 2](assets/fig4_diff_map.png)
 
 My map of vulnerability to climate change across Malawi (Figure 3) displays a much weaker positive correlation than do my adaptive capacity scores when compared to Malcomb et al's results. In this case, Spearman's rho is only 0.1143496, demonstrating a very weak positive correlation. (See Figure 4 for a geographic distribution of difference between the reproduction and the original.) Again, the p-value is very small at 1.49 x 10^-12, but again this is not particularly important as the sample size is so large. This weak correlation is relatively unsurprising given that Malcomb et al.'s description of their methods is ambiguous in many places and leaves significant room for interpretation. We had to determine how exactly to normalize the various variables, as well as how to use the livelihood zones data to develop the variables of percent of food from own farm, percent income from wage labor, percent income from cash crops, and disaster coping strategy. As a result, it is very likely that our scores differ greatly from Malcomb et al.'s. This is not necessarily to say that the replication results explicitly contradict the results of the original study, but more to say that it's difficult to tell whether or not the replication does or does not support the original study.
 
 *Figure 3. Vulnerability to Climate Change in Malawi. (analogous to Malcomb et al. Fig. 5)*
-![assets/vulnerability_full.png]
+![Figure 3](assets/vulnerability_full.png)
 
 *Figure 4. Vulnerability difference between reproduction and original.*
-![assets/fig5_diff_map.png]
+![Figure 4](assets/fig5_diff_map.png)
 
 ## Unplanned Deviations from the Protocol
 
@@ -266,7 +266,7 @@ Ultimately, this analysis was partly successful in reproducing Malcomb et al.'s 
 
 The results of this replication suggest a need for improved documentation in geographic information science research. A more detailed description of how livelihood sensitivity variables were developed and specific formulae for how overall household resilience scores were calculated would have likely made Malcomb et al.'s work much easier to replicate. Had the authors included the actual code and GIS workflows they used in the study, we would have been able to examine and critique their methods much more closely, and hopefully have much more success in producing results similar to theirs.
 
-In the world of open-source geographic information science, inclusion of detailed methodology and even actual code can prove particularly valuable to students or others attempting to learn from and reproduce research because anyone can obtain the necessary tools to complete the analysis. Because Malcomb et al. completed their analysis in ArcGIS and STATA, two proprietary software packages, this principle does not apply quite to the same degree, but more detailed documentation of methods and decisions would have made replicating the authors' work easier regardless of the replicator's software options. 
+In the world of open-source geographic information science, inclusion of detailed methodology and even actual code can prove particularly valuable to students or others attempting to learn from and reproduce research because anyone can obtain the necessary tools to complete the analysis. Because Malcomb et al. completed their analysis in ArcGIS and STATA, two proprietary software packages, this principle does not apply quite to the same degree, but more detailed documentation of methods and decisions would have made replicating the authors' work easier regardless of the replicator's software options.
 
 ## References
 
