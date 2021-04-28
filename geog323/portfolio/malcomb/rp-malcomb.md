@@ -206,7 +206,7 @@ Process Livelihood Sensitivity
 
 Process Physical Exposure
 1. Load in UNEP raster
-  - Set CRS for drought
+    - Set CRS for drought
   - Set CRS for flood
   - Clean and reproject rasters
 2. Create a bounding box at extent of Malawi
