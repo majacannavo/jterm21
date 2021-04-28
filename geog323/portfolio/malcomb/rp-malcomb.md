@@ -14,9 +14,7 @@ Maja Cannavo, Joseph Holler, Kufre Udoh, Open Source GIScience students of fall 
 
 **Special thanks** to my group members--we all worked together to write our workflow and data sources section:
 
-[Drew An-Pham](https://daptx.github.io/)
-
-[Emma Clinton](https://emmaclinton.github.io/)
+[Drew An-Pham](https://daptx.github.io/)<br/>[Emma Clinton](https://emmaclinton.github.io/)
 
 [Jacob Freedman](https://jafreedman12.github.io/)
 
