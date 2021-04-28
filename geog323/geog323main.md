@@ -10,6 +10,8 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 [Spatial Urban Resilience Analysis of Dar es Salaam](portfolio/dsm/dsm)
 
+[Climate Vulnerability in Malawi](portfolio/malcomb/rp-malcomb)
+
 ### Reflections:
 
 [Reflection 1: What is Open GIScience?](reflections/reflection1.md)
