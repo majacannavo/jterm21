@@ -19,3 +19,5 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 [Reflection 2: GIS as Reproducible Science](reflections/reflection2.md)
 
 [Reflection 3: Error and Uncertainty](reflections/reflection3.md)
+
+[Reflection 4: Spatial Twitter Analysis](reflections/reflection4.md)
