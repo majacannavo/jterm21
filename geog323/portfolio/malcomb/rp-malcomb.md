@@ -185,16 +185,16 @@ Process Adaptive Capacity
 3. Get rid of unsuitable households (eliminate NULL and/or missing values)
 4. Join TA and LHZ ID data to the DHS clusters
 5. Pre-process the livestock data
-	- Filter for NA livestock data
-	- Update livestock data (summing different kinds)
+	  - Filter for NA livestock data
+	  - Update livestock data (summing different kinds)
 6. FIELD CALCULATOR: Normalize each indicator variable and rescale from 1-5 (real numbers) based on percent rank
 7. FIELD CALCULATOR / ADD FIELD: Apply weights to normalized indicator variables to get scores for each category (assets, access)
 8. SUMMARIZE/AGGREGATE: find the stats of the capacity of each TA (min, max, mean, sd)
 9. Join ta_capacity to TA based on ta_id
 10. Prepare breaks for mapping
-  - Class intervals based on capacity_2010 field
-  - Take the values and round them to 2 decimal places
-  - Put data in 4 classes based on break values
+    - Class intervals based on capacity_2010 field
+    - Take the values and round them to 2 decimal places
+    - Put data in 4 classes based on break values
 11. Save the adaptive capacity scores
 
 Process Livelihood Sensitivity
@@ -202,25 +202,25 @@ Process Livelihood Sensitivity
 2. Join LHZ sensitivity data to LHZ polygon layer
 3. Import this joined layer into R
 4. Create livelihood sensitivity score data based on breakdown provided in report (Table 2)
-  - Multiply by 20 to get a score out of 20
+    - Multiply by 20 to get a score out of 20
 
 Process Physical Exposure
 1. Load in UNEP raster
     - Set CRS for drought
-  - Set CRS for flood
-  - Clean and reproject rasters
+    - Set CRS for flood
+    - Clean and reproject rasters
 2. Create a bounding box at extent of Malawi
-  - Add geometry info and precision (st_as_sfc)
-  - For Drought: use bilinear to avg continuous population exposure values
-  - For Flood: use nearest neighbor to preserve integer values
+    - Add geometry info and precision (st_as_sfc)
+    - For Drought: use bilinear to avg continuous population exposure values
+    - For Flood: use nearest neighbor to preserve integer values
 3. CLIP the traditional authorities with the LHZs to cut out the lake
 4. RASTERIZE the ta_capacity data with pixel data corresponding to capacity_2010 field
 5. RASTERIZE the livelihood sensitivity score with pixel data corresponding to capacity_2010 field
 6. RASTER CALCULATOR:
-  - Create a mask
-  - Reclassify the flood layer (quintiles, currently binary)
-  - Reclassify the drought values (quantile [from 0 - 1 in intervals of 0.2 =5])
-  - Add component rasters for final weighted score of drought + flood
+    - Create a mask
+    - Reclassify the flood layer (quintiles, currently binary)
+    - Reclassify the drought values (quantile [from 0 - 1 in intervals of 0.2 =5])
+    - Add component rasters for final weighted score of drought + flood
 
 Aggregate to create final score:
 1. Create final vulnerability layer using the following formula:
