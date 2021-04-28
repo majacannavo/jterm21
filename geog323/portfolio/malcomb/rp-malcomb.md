@@ -80,11 +80,14 @@ The DHS website acknowledges the high potential for inconsistent or incomplete d
 In this analysis, we use the variables listed in **Table 1** to determine the average adaptive capacity of each TA area. Data transformations are outlined below.
 
 Malawi Traditional Authorities:
+
 Source: Download GADM data (version 2.8). (2018). Database of Global Administrative Areas. https://gadm.org/download_country_v2.html
 
 Major Lakes:
+
 Source: http://www.masdap.mw/
 Taken from OSM
+
 Transformations: used in EA variable to classify major lakes as such in final representation
 
 
@@ -105,10 +108,15 @@ The LHZ data variables are outlined in **Table 2**. The four categories used to 
 
 
 Source: Download https://fews.net/data_portal_download/download?data_file_path=http%3A//shapefiles.fews.net.s3.amazonaws.com/LHZ/MW_LHZ_2009.zip
+
 Sources: Malawi Baseline Livelihood Profiles, Version 1* (September 2005). Made by Malawi National Vulnerability Assessment Committee in collaboration with the SADC FANR Vulnerability Assessment Committee -- file in metadata called mw_baseline_rural_en_2005.pdf
+
 Variables
+
 17 livelihood zones
+
 Livelihood zones created through: “The approach is to identify those factors (such as climate, soil, proximity to rivers, access to markets etc.) that determine the basic food and income options (the crops that will grow, the livestock that can be raised, the wild plants that can be collected, the fish that can be caught, and so on) and then to group similar areas together. In the case of Malawi, the exercise was one of updating an earlier food economy zone map prepared by Save the Children dating from 1996.” (2)
+
 The data we used is just to extract the geometries of the livelihood zone data and basically create the geometry boundaries of Malawi for processing to determine park boundaries
 
 FEWSNET data:
@@ -121,27 +129,34 @@ FEWSNET data:
   - Percent of cash sourced from self-employment & small business and trade: (firewood + sale of wild food + grass + mats + charcoal)
 
 Transformations:
-Join with DHS clusters to apply LHZ FNID variables
-Clip TA boundaries to Malawi (st_buffer of LHZ to .01 m)
-Create ecological areas: LHZ boundaries intersected with TA boundaries to clip out park/conservation boundaries and rename those park areas with the park information from TA data), combined with lake data to remove environmental areas from the analysis
+- Join with DHS clusters to apply LHZ FNID variables
+- Clip TA boundaries to Malawi (st_buffer of LHZ to .01 m)
+- Create ecological areas: LHZ boundaries intersected with TA boundaries to clip out park/conservation boundaries and rename those park areas with the park information from TA data), combined with lake data to remove environmental areas from the analysis
 
 
 **Physical Exposure**
 
 Floods
+
 Dataset title: “Global estimated risk index for flood hazard”
+
 “This dataset includes an estimate of the global risk induced by flood hazard. Unit is estimated risk index from 1 (low) to 5 (extreme). This product was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). It was modeled using global data. Credit: UNEP/GRID-Europe.”
 This dataset stems from work collected by multiple agencies and funneled into the PREVIEW Global Risk Data Platform, “an effort to share spatial information on global risk from natural hazards.” The dataset was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR), using global data. A flood estimation value is assigned via an index of 1 (low) to 5 (extreme).
 
 Droughts
+
 Dataset title: "Physical exposition to droughts events 1980-2001"
+
 This dataset uses the Standardized Precipitation Index to measure annual drought exposure across the globe. The Standardized Precipitation Index draws on data from a “global monthly gridded precipitation dataset” from the University of East Anglia’s Climatic Research Unit, and was modeled in GIS using methodology from Brad Lyon at Columbia University. The dataset draws on 2010 population information from the LandScanTM Global Population Database at the Oak Ridge National Laboratory.  Drought exposure is reported as the expected average annual (2010) population exposed. The data were compiled by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). The data use the WGS 1984 datum, span the years 1980-2001, and are reported in raster format with spatial resolution 1/24 degree x 1/24 degree.
 
 Sources: UNEP/GRID-Europe
+
 Global Risk Data Platform: Data-Download. (2013). Global Risk Data Platform. https://preview.grid.unep.ch/index.php?preview=data&lang=eng
-Drought: Physical exposition to droughts events 1980-2001
+
+Drought--Physical exposition to droughts events 1980-2001:
 https://preview.grid.unep.ch/index.php?preview=data&events=droughts&evcat=4&lang=eng
-Global estimated risk index for flood hazard
+
+Global estimated risk index for flood hazard:
 https://preview.grid.unep.ch/index.php?preview=data&events=floods&evcat=5&lang=eng
 
 Variables:
