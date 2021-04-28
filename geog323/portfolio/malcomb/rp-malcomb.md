@@ -45,8 +45,9 @@ The original study was published without data or code, but has detailed narrativ
 **Assets & Access**
 
 Source: The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from https://dhsprogram.com/Data/
-Collected by trained USAID staff using GPS receivers
-GPS readings correspond to center of household cluster (one randomized point per household cluster)
+
+Collected by trained USAID staff using GPS receivers.
+GPS readings correspond to center of household cluster (one randomized point per household cluster).
 
 *Table 1. Variables used in calculating adaptive capacity.*
 
