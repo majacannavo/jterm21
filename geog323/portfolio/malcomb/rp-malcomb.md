@@ -35,7 +35,7 @@ The study region is the country of Malawi. The spatial support of input data inc
 The original study was published without data or code, but has detailed narrative description of the methodology. The methods used are feasible for undergraduate students to implement following completion of one introductory GIS course. The study states that its data are available for replication in 23 African countries.
 
 
-### Data Description and Variables
+### Data Description and Variables (compiled as a group)
 
 **Assets & Access**
 
@@ -189,7 +189,7 @@ Transformations
 The original study was conducted using ArcGIS and STATA, but does not state which versions of these software were used.
 The replication study will use R.
 
-## Materials and Procedure
+## Materials and Procedure (compiled as a group)
 
 Process Adaptive Capacity
 1. Bring in DHS Data [Households Level] (vector)
