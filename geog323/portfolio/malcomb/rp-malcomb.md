@@ -262,6 +262,8 @@ My adaptive capacity scores by traditional authority (Figure 1) display a relati
 
 My map of vulnerability to climate change across Malawi (Figure 3) displays a much weaker positive correlation than do my adaptive capacity scores when compared to Malcomb et al's results. In this case, Spearman's rho is only 0.1143496, demonstrating a very weak positive correlation. (See Figure 4 for a geographic distribution of difference between the reproduction and the original.) Again, the p-value is very small at 1.49 x 10^-12, but again this is not particularly important as the sample size is so large. This weak correlation is relatively unsurprising given that Malcomb et al.'s description of their methods is ambiguous in many places and leaves significant room for interpretation. We had to determine how exactly to normalize the various variables, as well as how to use the livelihood zones data to develop the variables of percent of food from own farm, percent income from wage labor, percent income from cash crops, and disaster coping strategy. As a result, it is very likely that our scores differ greatly from Malcomb et al.'s. This is not necessarily to say that the replication results explicitly contradict the results of the original study, but more to say that it's difficult to tell whether or not the replication does or does not support the original study.
 
+<br/>
+
 *Figure 3. Vulnerability to Climate Change in Malawi. (analogous to Malcomb et al. Fig. 5)*
 <br/>
 
