@@ -224,21 +224,11 @@ Process Physical Exposure
 
 Aggregate to create final score:
 1. Create final vulnerability layer using the following formula:
+
   `final = (40 - (adaptive capacity)) * 0.40 + drought * 0.20 + flood * 0.20 + (livelihood sensitivity) * 0.20`
 
 
 ## Replication Results
-
-For each output from the original study (mainly figure 4 and figure 5), present separately the results of the replication attempt.
-
-2.	State whether the original study was or was not supported by the replication
-3.	State whether any hypothesis linked to a planned deviation from the original study was supported. Provide key statistics and related reasoning.
-
-Figures to Include:
-- map of resilience by traditional authority in 2010, analogous to figure 4 of the original study
-- map of vulnerability in Malawi, analogous to figure 5 of the original study
-- map of difference between your figure 4 and the original figure 4
-- map of difference between your figure 5 and the original figure 5
 
 My adaptive capacity scores by traditional authority (Figure 1) display a relatively strong positive correlation with the adaptive capacity scores calculated by Malcomb et al., with a Spearman's rho value of 0.779495. (See Figure 2 for a geographic distribution of difference between my reproduction and the original study.) The p-value is infinitesimal at less than 2.2 x 10^-16, although this means little given that we have a very large sample size. Thus, the original study is relatively well supported by the replication. It would be difficult to achieve a Spearman's rho of very close to 1 considering that we are not comparing our replication maps directly to Malcomb et al.'s but are instead comparing our replication maps to maps we created in QGIS seeking to approximate Malcomb et al.'s results as closely as possible using zonal statistics with a TA polygon layer and a georeferenced version of Malcomb et al.'s TA resilience map. No deviations were planned from the original study.
 
@@ -258,19 +248,9 @@ My map of vulnerability to climate change across Malawi (Figure 3) displays a mu
 
 ## Unplanned Deviations from the Protocol
 
-Summarize changes and uncertainties between
-- your interpretation and plan for the workflow based on reading the paper
-- your final workflow after accessing the data and code and completing the code
-
 Our group's original workflow based on just reading the paper was relatively rough; we didn't have a lot of detail as to how exactly the data were cleaned and variables were calculated. Also, not having the data, we didn't know exactly what variables we would have access to and what scale they would be at. For instance, we originally thought that the DHS data would come in at the household level and that we would later need to aggregate the households into villages and then aggregate those villages into TAs. Once we had access to the code and the data, we realized that the DHS data came to us in household clusters, so we didn't need to aggregate it into villages. After seeing the data and the code, we were also able to write up a more detailed workflow that included elements such as how to normalize the variables to get them on a scale of 1-5, how to resample the flood and drought exposure rasters, and how to mask and rescale the rasters so that we could eventually add the values of the various rasters to achieve our final vulnerability score. Overall, our group really struggled to piece together the general pattern of the workflow prior to accessing the data and code, but once we were able to view the data and the R script, the details of the workflow became much clearer. We also had very little idea of what the LHZ data would look like before we had access to them, so we wrote the entire part of the workflow dealing with the LHZ data after we were able to view these data. Examining the surveys, we were able to define how to compose and normalize our four livelihood sensitivity indicator variables, as well as how to integrate the livelihood sensitivity scores into the final raster algebra step to calculate the final vulnerability score.
 
 ## Discussion
-
-Provide a summary and interpretation of the key findings of the replication *vis-a-vis* the original study results. If the attempt was a failure, discuss possible causes of the failure. In this replication, any failure is probably due to practical causes, which may include:
-- lack of data
-- lack of code
-- lack of details in the original analysis
-- uncertainties due to manner in which data has been used
 
 While TA adaptive capacity scores display a strong positive correlation between the original study and the reproduction, the same is not true for overall household resilience score. As shown in Figure 1, in the case of many TAs the reproduction and original yielded adaptive capacity scores in the same class (each score was assigned to one of four classes based on a Jenks classification), and in most other case the difference in classes was minimal (1 or -1). In only a few cases did the two results differ by more than 1. The Spearman's rho value of 0.779495 serves to reinforce the conclusion that the adaptive capacity scores of the original and replication mirror each other closely.
 
@@ -282,18 +262,18 @@ Another major contributor to the disparity in overall vulnerability score is pro
 
 ## Conclusion
 
-Restate the key findings and discuss their broader societal implications or contributions to theory.
-Do the research findings suggest a need for any future research?
-
 Ultimately, this analysis was partly successful in reproducing Malcomb et al.'s study of climate change vulnerability in Malawi. We found that it was much easier to reliably reproduce results for the parts of the study where indicator variables were clearly delineated and it was readily apparent how data points mapped to these variables. This reproduction also lends support to Tate's (2013) conceptualization of vulnerability index development as "a sequential process" wherein uncertainty arising at each step has an effect on each step further down the line until the final result is computed (p. 528). I was able to achieve a fairly successful replication of Malcomb et al.'s adaptive capacity results, for which the computation process is clear and well documented. When the factors of livelihood sensitivity and physical exposure are added in, however, the original authors' methodology becomes less clear, and the authors of the reproduction must decide how to interpret this methodology, potentially making decisions that diverge significantly from those of the original authors.
 
 The results of this replication suggest a need for improved documentation in geographic information science research. A more detailed description of how livelihood sensitivity variables were developed and specific formulae for how overall household resilience scores were calculated would have likely made Malcomb et al.'s work much easier to replicate. Had the authors included the actual code and GIS workflows they used in the study, we would have been able to examine and critique their methods much more closely, and hopefully have much more success in producing results similar to theirs.
 
-In the world of open-source geographic information science, inclusion of detailed methodology and even actual code can prove particularly valuable to students or others attempting to learn from and reproduce research because anyone can obtain the necessary tools to complete the analysis. Because Malcomb et al. completed their analysis in ArcGIS and STATA, two proprietary software packages, this principle does not apply quite to the same degree, but more detailed documentation of methods and decisions would have made replicating the authors' work easier regardless of the replicator's software options.
+In the world of open-source geographic information science, inclusion of detailed methodology and even actual code can prove particularly valuable to students or others attempting to learn from and reproduce research because anyone can obtain the necessary tools to complete the analysis. Because Malcomb et al. completed their analysis in ArcGIS and STATA, two proprietary software packages, this principle does not apply quite to the same degree, but more detailed documentation of methods and decisions would have made replicating the authors' work easier regardless of the replicator's software options. 
 
 ## References
 
-Include any referenced studies or materials in the [AAG Style of author-date referencing](https://www.tandf.co.uk//journals/authors/style/reference/tf_USChicagoB.pdf).
+Tate, E. (2013). Uncertainty Analysis for a Social Vulnerability Index. *Annals of the Association of American Geographers*, 103(3), 526–543. https://doi.org/10.1080/00045608.2012.700616
+
+Malcomb, D. W., E. A. Weaver, and A. R. Krakowka. 2014. Vulnerability modeling for sub-Saharan Africa: An operationalized approach in Malawi. *Applied Geography* 48:17–30. DOI:[10.1016/j.apgeog.2014.01.004](https://doi.org/10.1016/j.apgeog.2014.01.004)
+
 
 ####  Report Template References & License
 
