@@ -21,3 +21,5 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 [Reflection 3: Error and Uncertainty](reflections/reflection3.md)
 
 [Reflection 4: Spatial Twitter Analysis](reflections/reflection4.md)
+
+[Reflection 5: Humanitarian GIS](reflections/reflection5.md)
