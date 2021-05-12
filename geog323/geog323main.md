@@ -12,6 +12,8 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 [Climate Vulnerability in Malawi](portfolio/malcomb/rp-malcomb)
 
+[Spatial Twitter Analysis](portfolio/spatial_twitter/spatial_twitter)
+
 ### Reflections:
 
 [Reflection 1: What is Open GIScience?](reflections/reflection1.md)
