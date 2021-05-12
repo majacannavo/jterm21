@@ -64,12 +64,12 @@ Next I used a spatial join to join both vaccine and control tweets to counties. 
 ![Figure 3](assets/word_network.png)
 
 *Figure 3. Network of word pairs commonly colocated in vaccine-related tweets.*
-<br/><br/><br/>
+<br/><br/>
 
 ![Figure 4](assets/tweet_locations.png)
 
 *Figure 4. Locations of vaccine-related tweets in the continental US.*
-<br/><br/><br/>
+<br/><br/>
 
 ![Figure 5](assets/vaccine_clusters.png)
 
