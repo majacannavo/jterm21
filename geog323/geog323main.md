@@ -25,3 +25,5 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 [Reflection 4: Spatial Twitter Analysis](reflections/reflection4.md)
 
 [Reflection 5: Humanitarian GIS](reflections/reflection5.md)
+
+[Reflection 6: Individual Privacy vs. the Greater Good with Big (Geospatial) Data](reflections/reflection6.md)
