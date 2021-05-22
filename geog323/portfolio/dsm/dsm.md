@@ -135,7 +135,7 @@ set danger_ws_density = countwastesites / area_km2;
 
 ## Results
 
-An interactive web map of our results is available [here](https://mtango99.github.io/dsm/assets/#11/-6.7925/39.2333).
+An interactive web map of our results is available [here](assets/index.html).
 
 According to our analysis, the highest density of waste sites near water transmission features occurs in the center of Dar es Salaam (Figure 1). It is unsurprising that waste sites are so clustered here due to the high population density of the area (Figure 2), but the sites' proximity to water transmission features greatly increases their level of environmental hazard (Figure 1). In the event of rain, it is highly likely that the accumulated solid waste would block water flow and drainage, leading to increased flood risk in addition to pollution and contamination by pathogens, toxins, and other environmental hazards. This is particularly concerning due to the high population density of Dar es Salaam's central wards, since pollution from waste sites in these areas can reach large numbers of people very easily in the event of rain.
 
