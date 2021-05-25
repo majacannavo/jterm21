@@ -19,10 +19,12 @@ Maja Cannavo, Joseph Holler, Kufre Udoh, Open Source GIScience students of fall 
 [Nick Nonnenmacher](https://nicknonnen.github.io/)<br/>
 [Alitzel Villaneuva](https://avillanueva1005.github.io/)
 
+**Also many thanks** to [Vincent Falardeau](https://vinfalardeau.github.io/) for invaluable help with mapping in ggplot, specifically getting the legend items properly ordered in Figure 2 and using a diverging color ramp in Figure 4.
+
 Replication Materials Available at: [majacannavo/RP-Malcomb](https://github.com/majacannavo/RP-Malcomb)
 
 Created: `14 April 2021` |
-Revised: `27 April 2021`
+Revised: `25 May 2021`
 
 ## Abstract
 
@@ -41,7 +43,7 @@ The original study was published without data or code, but has detailed narrativ
 
 Source: The DHS Program—Data. (2010). The DHS Program--USAID. Retrieved April 19, 2021, from https://dhsprogram.com/Data/
 
-Collected by trained USAID staff using GPS receivers.
+Collected by trained [USAID](https://www.usaid.gov/) staff using GPS receivers.
 GPS readings correspond to center of household cluster (one randomized point per household cluster).
 
 In this analysis, we use the variables listed in **Table 1** to determine the average adaptive capacity of each TA area. Data transformations are outlined below.
@@ -85,7 +87,7 @@ Transformations:
    - Put data in 4 classes based on break values
 
 Demographic and Health Survey data are a product of the United States Agency for International Development (USAID). Variables contained in this dataset are used to represent adaptive capacity (access + assets) in the Malcomb et al.’s (2014) study. These data come from survey questionnaires with large sample sizes.
-The DHS data used in our study were collected in 2010. In Malawi, the provenance of the DHA data dates back as far as 1992, but has not been collected consistently every year. Each point in the household dataset represents a cluster of households with each cluster corresponding to some form of census enumeration units, such as villages in rural areas or city blocks in urban areas [DHS GPS Manual](/data/metadata/DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf). This means that each household in each cluster has the same GPS data. This data is collected by trained [USAID](https://www.usaid.gov/) staff using GPS receivers.
+The DHS data used in our study were collected in 2010. In Malawi, the provenance of the DHA data dates back as far as 1992, but has not been collected consistently every year. Each point in the household dataset represents a cluster of households with each cluster corresponding to some form of census enumeration units, such as villages in rural areas or city blocks in urban areas [DHS GPS Manual](/data/metadata/DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf). This means that each household in each cluster has the same GPS data. However, the GPS point for each cluster is given a random offset in the interest of protecting privacy, so the coordinates are not precise.
 
 Missing data is a common occurrence in this dataset as a result of negligence or incorrect naming. However, according to the [DHS GPS Manual](/data/metadata/DHS_GPS_Manual_English_A4_24May2013_DHSM9.pdf), these issues are easily rectified and data are typically recollected for sites where they are missing. Sometimes, however, missing information is coded in as such or assigned a proxy location.
 The DHS website acknowledges the high potential for inconsistent or incomplete data in such broad and expansive survey sets. Missing survey data (responses) are never estimated or made up; they are instead coded as a special response indicating the absence of data. As well, there are clear policies in place to ensure the data’s accuracy. More information about data validity can be found on the [DHS’s Data Quality and Use site](https://www.dhsprogram.com/data/Data-Quality-and-Use.cfm).
@@ -153,7 +155,7 @@ Floods
 Dataset title: “Global estimated risk index for flood hazard”
 
 “This dataset includes an estimate of the global risk induced by flood hazard. Unit is estimated risk index from 1 (low) to 5 (extreme). This product was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR). It was modeled using global data. Credit: UNEP/GRID-Europe.”
-This dataset stems from work collected by multiple agencies and funneled into the PREVIEW Global Risk Data Platform, “an effort to share spatial information on global risk from natural hazards.” The dataset was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR), using global data. A flood estimation value is assigned via an index of 1 (low) to 5 (extreme).
+This dataset stems from work collected by multiple agencies and funneled into the PREVIEW Global Risk Data Platform, “an effort to share spatial information on global risk from natural hazards.” The dataset was designed by UNEP/GRID-Europe for the Global Assessment Report on Risk Reduction (GAR), using global data. A flood estimation value is assigned via an index of 1 (low) to 5 (extreme). The data use the WGS 1984 datum, span the years 1999-2007, and are reported in raster format with spatial resolution 1/24 degree x 1/24 degree.
 
 Droughts
 
@@ -239,6 +241,15 @@ Aggregate to create final score:
 
   `final = (40 - (adaptive capacity)) * 0.40 + drought * 0.20 + flood * 0.20 + (livelihood sensitivity) * 0.20`
 
+Compare results with Malcomb et al.
+1. Digitize Malcomb et al.'s maps of adaptive capacity and overall vulnerability
+2. Calculate Spearman's rho between reproduced and original adaptive capacity scores to investigate correlation
+3. Calculate difference between reproduced and original TA adaptive capacity scores, and display on map
+4. Calculate difference between reproduced and original overall vulnerability scores
+5. Make scatterplot of reproduced vs. original vulnerability scores
+6. Calculate Spearman's rho between reproduced and original vulnerability scores to investigate correlation
+7. Map difference between reproduced and original vulnerability scores
+
 
 ## Replication Results
 
@@ -260,7 +271,7 @@ My adaptive capacity scores by traditional authority (Figure 1) display a relati
 
 <br/>
 
-My map of vulnerability to climate change across Malawi (Figure 3) displays a much weaker positive correlation than do my adaptive capacity scores when compared to Malcomb et al.'s results. In this case, Spearman's rho is only 0.114, demonstrating a very weak positive correlation. (See Figure 4 for a geographic distribution of difference between the reproduction and the original.) Again, the p-value is very small at 1.49 x 10^-12, but again this is not particularly important as the sample size is so large. This weak correlation is relatively unsurprising given that Malcomb et al.'s description of their methods is ambiguous in many places and leaves significant room for interpretation. We had to determine how exactly to normalize the various variables, as well as how to use the livelihood zones data to develop the variables of percent of food from own farm, percent income from wage labor, percent income from cash crops, and disaster coping strategy. As a result, it is very likely that our scores differ greatly from Malcomb et al.'s. This is not necessarily to say that the replication results explicitly contradict the results of the original study, but more to say that it's difficult to tell whether or not the replication does or does not support the original study.
+My map of vulnerability to climate change across Malawi (Figure 3) displays a much weaker positive correlation than do my adaptive capacity scores when compared to Malcomb et al.'s results. In this case, Spearman's rho is only 0.114, demonstrating a very weak positive correlation. (See Figure 4 for a geographic distribution of difference between the reproduction and the original. See Figure 5 for a scatterplot point comparison between the results of the original study and the reproduction.) Again, the p-value is very small at 1.49 x 10^-12, but again this is not particularly important as the sample size is so large. This weak correlation is relatively unsurprising given that Malcomb et al.'s description of their methods is ambiguous in many places and leaves significant room for interpretation. We had to determine how exactly to normalize the various variables, as well as how to use the livelihood zones data to develop the variables of percent of food from own farm, percent income from wage labor, percent income from cash crops, and disaster coping strategy. As a result, it is very likely that our scores differ greatly from Malcomb et al.'s, and we must conclude that the results of our reproduction do not support those of the original study.
 
 <br/>
 
@@ -271,18 +282,24 @@ My map of vulnerability to climate change across Malawi (Figure 3) displays a mu
 
 <br/><br/>
 
-*Figure 4. Vulnerability difference between reproduction and original.*
+*Figure 4. Map of vulnerability difference between reproduction and original.*
 <br/>
 
-![Figure 4](assets/fig5_diff_map.png)
+![Figure 4](assets/fig5_diff_map_new.png)
+
+<br/>
+
+*Figure 5. Scatterplot of vulnerability difference between reproduction and original.*
+
+![Figure 5](assets/fig5_comparison_scatterplot.png)
 
 <br/>
 
 ## Unplanned Deviations from the Protocol
 
-Our group's original workflow based on just reading the paper was relatively rough; we didn't include much detail as to how exactly the data were to be cleaned and variables were to be calculated. Also, not having the data, we didn't know exactly what variables we would have access to and what scale they would be at. For instance, we originally thought that the DHS data would come in at the household level and that we would later need to aggregate the households into villages and then aggregate those villages into TAs. Once we had access to the code and the data, we realized that the DHS data came to us in household clusters, so we didn't need to aggregate them into villages. After seeing the data and the code, we were also able to write up a more detailed workflow that included elements such as how to normalize the variables to get them on a scale of 1-5, how to resample the flood and drought exposure rasters, and how to mask and rescale the rasters so that we could eventually add the values of the various rasters to achieve our final vulnerability score.
+Our group's original workflow based on an initial reading of the paper was relatively rough; we included little detail as to how exactly the data were to be cleaned and the variables calculated. Also, lacking the data, we were unsure of the variables we would have access to, as well as the scale of these variables. For instance, our initial impression was that the DHS data would come at the household level and that further steps would be necessary to aggregate the households into villages and then to aggregate the villages into TAs. Upon gaining access to the code and the data, we realized that the DHS data came in the units of household clusters, so aggregating them into villages would be unnecessary. With access to the data and the code, we were also able to draft a more detailed workflow including elements such as how to normalize the variables to scale them from 1-5, how to resample the flood and drought exposure rasters, and how to mask and rescale the rasters so that their values could eventually be added to achieve the final vulnerability score.
 
-Overall, our group really struggled to piece together the general pattern of the workflow prior to accessing the data and code, but once we were able to view the data and the R script, the details of the workflow became much clearer. We also had very little idea of what the LHZ data would look like before we had access to them, so we wrote the entire part of the workflow dealing with the LHZ data after we were able to view these data. Examining the surveys, we were able to define how to compose and normalize our four livelihood sensitivity indicator variables, as well as how to integrate the livelihood sensitivity scores into the final raster algebra step to calculate the final vulnerability score.
+Overall, it proved quite challenging to piece together the general pattern of the workflow prior to accessing the data and code, but upon viewing the data and the R script, the details of the workflow became much clearer. It was also somewhat unclear initially what the LHZ data would look like, so we wrote the part of the workflow relating to these data only after we obtained access to them. Examining the surveys, we could define how to compose and normalize the four livelihood sensitivity indicator variables, as well as how to integrate the livelihood sensitivity scores into the final raster algebra step to calculate the final vulnerability score.
 
 ## Discussion
 
