@@ -14,7 +14,7 @@ This spring, I'm taking [Open Source Geographic Information Science](https://gis
 
 [Spatial Twitter Analysis](portfolio/spatial_twitter/spatial_twitter)
 
-[Spatial Accessibility of COVID-19 Healthcare Resources](portfolio/rp-kang)
+[Spatial Accessibility of COVID-19 Healthcare Resources](portfolio/kang/rp-kang)
 
 ### Reflections:
 
